@@ -10,6 +10,11 @@ function App() {
           This is going to be my own website!
         </p>
       </header>
+      <footer>
+        <p>
+          Made by Anna Losowicka in React
+        </p>
+      </footer>
     </div>
   );
 }
