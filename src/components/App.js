@@ -1,21 +1,27 @@
-import doggo from '../images/doggo.png';
 import '../styles/App.css';
 
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+import Home from './Home.js'
+import Landing from './Landing'
+import Portfolio from './Portfolio'
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={doggo} className="App-logo" alt="logo" />
-        <p>
-          This is going to be my own website!
-        </p>
-      </header>
-      <footer>
-        <p>
-          Made by Anna Losowicka in React
-        </p>
-      </footer>
-    </div>
+  return(
+  <Router>
+      <div>
+          <Routes>
+            <Route exact path="/" element= {<Landing/>} />
+            <Route path = "/home" element = {<Home/>} />
+            <Route path = "/portfolio" element = {<Portfolio/>} />
+          </Routes>
+      </div>
+    </Router>
   );
 }
 

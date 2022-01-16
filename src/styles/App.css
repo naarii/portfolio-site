@@ -2,14 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
+.App-doggo {
   height: 40vmin;
   pointer-events: none;
+  position: absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 15s ease-out;
+  .App-doggo {
+    animation: App-doggo-spin infinite 15s ease-out;
   }
 }
 
@@ -28,9 +29,9 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-doggo-spin {
   0% {
-    transform: rotate(0deg) scale(0.1);
+    transform: rotate(0deg) scale(0.3);
   }
   33% {
     transform: rotate(720deg) scale(3);
@@ -39,6 +40,6 @@
     transform: rotate(720deg) scale(3);
   }
   100% {
-    transform: translateX(-1500px) scale(3);;
+    transform: translateX(-600%) scale(3);;
   }
 }

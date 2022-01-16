@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+
+import App from './components/App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    <footer>
+        <p>
+          Made by Anna Losowicka in React
+        </p>
+      </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
